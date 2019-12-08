@@ -1,6 +1,12 @@
 clean ::
 	docker image rm node-git-chromium
 
+lint ::
+        docker run --rm -i \
+                -v ${PWD}/.hadolint.yaml:/bin/hadolint.yaml \
+                -e XDG_CONFIG_HOME=/bin hadolint/hadolint \
+                < Dockerfile
+
 build ::
 	docker build -t node-git-chromium .
 

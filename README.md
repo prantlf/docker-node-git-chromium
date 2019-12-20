@@ -58,7 +58,7 @@ Licensed under the MIT license.
 
 [Docker]: https://www.docker.com/
 [This image]: https://hub.docker.com/repository/docker/prantlf/node-git-chromium
-[`lts-alpine`]: https://hub.docker.com/repository/docker/prantlf/node-git/tags
+[`lts-alpine`]: https://hub.docker.com/repository/docker/prantlf/node-git-chromium/tags
 [Node.js packages (NPM modules)]: https://docs.npmjs.com/about-packages-and-modules
 [Git]: https://git-scm.com/
 [headless Chromium]: https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md

@@ -13,12 +13,16 @@
 ## Install
 
 ```
-docker pull prantlf/node-git-chromium
-# or
 docker pull prantlf/node-git-chromium:lts-alpine
 ```
 
 ## Use
+
+```
+docker run --rm -it -v "$(pwd)":/app -w /app \
+  prantlf/node-git-chromium:lts-alpine \
+  sh -c 'npm ci && npm test'
+```
 
 See [how to use the base node image] for more information.
 
